@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @category.title %>
+</p>
+
+<%= link_to 'Edit', edit_category_path(@category) %> |
+<%= link_to 'Back', categories_path %>
+
+<br>
+
+<h1 class:"show"> List of books for the author </h1>
+
+<p class="category">
+  <% @category.books.each do |book| %>
+    <h3>Title: </h3><%= book.title %>
+    <h3>Price</h3>
+    <%= book.price %>
+    <h3>Publisher</h3>
+    <%= book.publisher %>
+    <h3>---------------</h3>
+  <% end %>
+</p>

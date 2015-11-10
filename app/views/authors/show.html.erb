@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @author.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @author.last_name %>
+</p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @author.genre %>
+</p>
+
+<p>
+  <strong>Dob:</strong>
+  <%= @author.dob %>
+</p>
+
+<p>
+  <strong>Dod:</strong>
+  <%= @author.dod %>
+</p>
+
+<%= link_to 'Edit', edit_author_path(@author) %> |
+<%= link_to 'Back', authors_path %>
+
+<br>
+
+<h1> List of books for the author </h1>
